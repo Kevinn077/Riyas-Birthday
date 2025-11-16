@@ -68,6 +68,9 @@
             transform: translateY(20px);
             transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
             pointer-events: none;
+            max-height: 90%; /* कार्ड को स्क्रीन के 90% से ज़्यादा ऊँचा न होने दें */
+            overflow-y: auto; /* कार्ड के अंदर के कंटेंट को स्क्रॉल करने की अनुमति दें */
+            -webkit-overflow-scrolling: touch;
         }
 
         .step.active {
@@ -506,3 +509,4 @@
 </body>
 
 </html>
+
